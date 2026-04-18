@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I Love You ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Great+Vibes&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Falling Petals Container -->
+  <div id="petals-container"></div>
+
+  <!-- Floating Roses Background -->
+  <div id="roses-bg"></div>
+
+  <!-- Main Page -->
+  <div class="page" id="page">
+
+    <!-- Envelope Intro -->
+    <div class="envelope-screen" id="envelope-screen">
+      <div class="envelope-wrap">
+        <div class="envelope" id="envelope">
+          <div class="envelope-flap"></div>
+          <div class="envelope-body">
+            <div class="envelope-heart">💌</div>
+          </div>
+        </div>
+        <p class="open-hint">Click to open your surprise...</p>
+      </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content hidden" id="main-content">
+
+      <!-- Sparkle Header -->
+      <div class="header-section">
+        <div class="sparkle-row" id="sparkle-row"></div>
+        <h1 class="title-love">I Love You</h1>
+        <div class="rose-divider">🌹 ✦ 🌹 ✦ 🌹</div>
+      </div>
+
+      <!-- Best Wife Ever Badge -->
+      <div class="badge-wrap">
+        <div class="badge">
+          <div class="badge-inner">
+            <div class="badge-stars">★ ★ ★ ★ ★</div>
+            <div class="badge-title">Best Wife Ever</div>
+            <div class="badge-sub">In Every Universe</div>
+          </div>
+          <div class="badge-glow"></div>
+        </div>
+      </div>
+
+      <!-- Floating Hearts -->
+      <div class="hearts-row" id="hearts-row"></div>
+
+      <!-- Love Letter -->
+      <div class="letter-wrap">
+        <div class="letter">
+          <div class="letter-decoration top-deco">❦</div>
+          <p class="letter-text">
+            My dearest love,<br/><br/>
+            Every single day with you feels like the most beautiful dream I never want to wake from.
+            You are my sunrise, my laughter, my calm — the reason my heart beats with joy.
+            <br/><br/>
+            In a garden of roses, <em>you are the most breathtaking one.</em>
+            <br/><br/>
+            Thank you for being <strong>you</strong>. Thank you for being <strong>mine</strong>.
+          </p>
+          <div class="letter-decoration bot-deco">❦</div>
+          <div class="letter-sig">Forever yours, with all my love 💕</div>
+        </div>
+      </div>
+
+      <!-- Rose Garden Row -->
+      <div class="rose-garden">
+        <span class="rose r1">🌹</span>
+        <span class="rose r2">🌸</span>
+        <span class="rose r3">🌺</span>
+        <span class="rose r4">🌹</span>
+        <span class="rose r5">💐</span>
+        <span class="rose r6">🌹</span>
+        <span class="rose r7">🌸</span>
+        <span class="rose r8">🌺</span>
+        <span class="rose r9">🌹</span>
+      </div>
+
+      <!-- Heartbeat Bar -->
+      <div class="heartbeat-wrap">
+        <svg class="heartbeat-svg" viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
+          <polyline id="heartbeat-line" points="" stroke="#e63950" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="hb-label">My heart beats for you ❤️</div>
+      </div>
+
+      <!-- Final Message -->
+      <div class="final-msg">
+        <div class="final-text" id="final-text"></div>
+      </div>
+
+      <!-- Fireworks button -->
+      <div class="btn-wrap">
+        <button class="love-btn" id="love-btn" onclick="launchFireworks()">
+          <span>Send My Love 💖</span>
+        </button>
+      </div>
+
+      <!-- Canvas for fireworks -->
+      <canvas id="fireworks-canvas"></canvas>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
